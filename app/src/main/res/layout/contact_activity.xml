@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:gravity="center"
+        android:fontFamily="@font/cherry_swash"
+        android:text="@string/contact_with_us"
+        android:textSize="30dp"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/passengers_linear_layout">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_selector"
+                    android:padding="20dp"
+                    android:gravity="center"
+                    android:text="@string/contact_text"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+                <ImageButton
+                    android:id="@+id/dial_btn"
+                    android:layout_height="100dp"
+                    android:layout_width="90dp"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"
+                    android:padding="20dp"
+                    android:background="@drawable/shape_selector"
+                    android:src="@drawable/dial_icon" />
+
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/shape_selector"
+                    android:layout_gravity="center"
+                    android:padding="20dp"
+                    android:src="@drawable/call_icon"
+                    android:id="@+id/call_btn"
+                    android:text="Call"/>
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_selector"
+                    android:padding="20dp"
+                    android:src="@drawable/mail"
+                    android:id="@+id/email_btn"
+                    android:text="Email"/>
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:padding="20dp"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/shape_selector"
+                    android:src="@drawable/sms_icon"
+                    android:id="@+id/sms_btn"
+                    android:text="SMS us"/>
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/shape_selector"
+                    android:layout_gravity="center"
+                    android:padding="20dp"
+                    android:src="@drawable/whatsapp_icon"
+                    android:id="@+id/whatsapp_btn"
+                    android:text="Whatsapp us"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/addContact"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"
+                    android:layout_margin="10sp"
+                    android:fontFamily="@font/cherry_swash"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    />
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/shape_selector"
+                    android:text="add"
+                    android:layout_gravity="center"
+                    android:layout_margin="5sp"
+                    android:src="@drawable/add_contact"
+                    android:id="@+id/add_contacts"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+

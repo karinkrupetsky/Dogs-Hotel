@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="false">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/welcoming"
+                android:layout_gravity="center"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/thanks_registered"
+                android:gravity="center"
+                android:layout_margin="5sp"
+                android:fontFamily="@font/cherry_swash"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="22sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/scroll_down"
+                android:gravity="center"
+                android:layout_margin="5sp"
+                android:fontFamily="@font/cherry_swash"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/details"
+                android:gravity="center"
+                android:layout_margin="5sp"
+                android:fontFamily="@font/cherry_swash"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="330dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/shape_selector">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:layout_margin="5sp"
+                    android:fontFamily="@font/cherry_swash"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/name_dog"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_margin="5sp"
+                    android:fontFamily="@font/cherry_swash"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/age_dog"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_margin="5sp"
+                    android:fontFamily="@font/cherry_swash"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/phone_owner"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_margin="5sp"
+                    android:fontFamily="@font/cherry_swash"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:id="@+id/email_owner"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/see_ya"
+                    android:layout_margin="5sp"
+                    android:fontFamily="@font/cherry_swash"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"/>
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/dogiis"
+                    android:src="@drawable/dogiis"/>
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/timer_tv"
+                android:gravity="center"
+                android:layout_margin="10sp"
+                android:fontFamily="@font/cherry_swash"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"/>
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:padding="10dp"
+                android:id="@+id/timer"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/timer"
+                android:background="@drawable/shape_selector"/>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/byebye"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
